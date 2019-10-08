@@ -1,5 +1,9 @@
 class WelcomeController < ApplicationController
   def index
-    @nome = "Fogaça"
+    #pegar parametro via get / post
+    @nome  = params[:nome]
+    # Variável de instância
+    #@nome  = "Fogaça"
+    @curso = "Rails" 
   end
 end
